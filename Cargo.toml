@@ -1,0 +1,20 @@
+[package]
+name = "use-uikit-sys-blog-post"
+version = "0.1.0"
+authors = ["Sebastian Imlay <sebastian.imlay@gmail.com>"]
+edition = "2018"
+description = ""
+
+[package.metadata.bundle.example.uikit]
+name = "rect"
+identifier = "com.github.simlay.uikit"
+category = "Utility"
+short_description = "An example of a uikit-sys"
+long_description = """An example of using uikit-sys
+"""
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+uikit-sys = { git = "https://github.com/simlay/uikit-sys" }
+winit = "0.22.2"
