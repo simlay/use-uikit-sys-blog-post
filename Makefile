@@ -8,3 +8,6 @@ run: install
 
 install: bundle
 	xcrun simctl install booted target/x86_64-apple-ios/debug/examples/bundle/ios/uikit.app
+
+setup:
+	cargo install cargo-bundle --git https://github.com/burtonageo/cargo-bundle
