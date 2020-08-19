@@ -4,7 +4,7 @@ use winit::{
     window::WindowBuilder,
 };
 
-
+#[no_mangle]
 pub extern fn run_app() {
     let event_loop = EventLoop::new();
     let window = WindowBuilder::new().build(&event_loop).unwrap();
