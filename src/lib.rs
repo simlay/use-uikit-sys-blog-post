@@ -1,8 +1,10 @@
 use winit::{
-    event::{Event, WindowEvent},
+    event::{Event, WindowEvent, StartCause},
     event_loop::{ControlFlow, EventLoop},
     window::WindowBuilder,
 };
+
+
 pub extern fn run_app() {
     let event_loop = EventLoop::new();
     let window = WindowBuilder::new().build(&event_loop).unwrap();
@@ -11,6 +13,9 @@ pub extern fn run_app() {
         *control_flow = ControlFlow::Wait;
 
         match event {
+            Event::NewEvents(StartCause::Init) => {
+                println!("The app has started!");
+            },
             Event::WindowEvent {
                 event: WindowEvent::CloseRequested,
                 window_id,

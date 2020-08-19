@@ -6,7 +6,7 @@ edition = "2018"
 description = ""
 
 [package.metadata.bundle.example.uikit]
-name = "rect"
+name = "uikit"
 identifier = "com.github.simlay.uikit"
 category = "Utility"
 short_description = "An example of a uikit-sys"
