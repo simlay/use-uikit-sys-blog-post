@@ -13,8 +13,6 @@ short_description = "An example of a uikit-sys"
 long_description = """An example of using uikit-sys
 """
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 uikit-sys = { git = "https://github.com/simlay/uikit-sys" }
 winit = "0.22.2"
