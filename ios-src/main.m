@@ -1,7 +1,6 @@
 #import "bindings.h"
 
-int main(int argc, char * argv[]) {
+int main() {
     run_app();
-
     return 0;
 }

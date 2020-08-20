@@ -12,6 +12,7 @@ bundle-install: bundle
 bundle-setup:
 	cargo install cargo-bundle --git https://github.com/burtonageo/cargo-bundle
 
+
 run: install
 	xcrun simctl launch --console booted com.rust.use-uikit-example
 
